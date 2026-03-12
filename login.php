@@ -108,7 +108,7 @@
 							alert("Логин или пароль не верный.");
 						} else {
 							localStorage.setItem("token", _data);
-							// location.reload();
+							location.reload();
 							loading.style.display = "none";
 							button.className = "button";
 						}
