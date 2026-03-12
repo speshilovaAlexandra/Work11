@@ -83,7 +83,7 @@
 				
 				_login = encryptAES(_login, secretKey);
     			_password = encryptAES(_password, secretKey);
-				
+
 				var data = new FormData();
 				data.append("login", _login);
 				data.append("password", _password);
@@ -108,7 +108,7 @@
 							alert("Логин или пароль не верный.");
 						} else {
 							localStorage.setItem("token", _data);
-							location.reload();
+							// location.reload();
 							loading.style.display = "none";
 							button.className = "button";
 						}
